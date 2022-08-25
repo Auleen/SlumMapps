@@ -1,0 +1,19 @@
+.rowbtn{
+    display: block;
+    justify-content: space-between;
+}
+
+.btnn{
+    border-radius: 3px;
+    background-color: rgb(255, 55, 55);
+    margin: 0.5rem;
+    padding: 1rem;
+    color: aliceblue;
+    font-weight: 800;
+}
+
+.btnn:hover{
+    background-color: aliceblue;
+    color: rgb(255, 55, 55);   
+    cursor: pointer;
+}
