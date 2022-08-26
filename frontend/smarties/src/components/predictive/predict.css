@@ -1,0 +1,32 @@
+.head{
+    color: #fff;
+    text-align: center;
+    background-color: #fa5555;
+    background-image: linear-gradient(120deg, #155799, #eb5555);
+    height: 40%;
+    padding: 2rem;
+}
+.btnagain{
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+.textbox{
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.textbox h3{
+    color:#eb5555;
+}
+
+img{
+    width: 720px;
+    height: auto;
+}
