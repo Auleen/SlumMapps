@@ -9,7 +9,7 @@ More than one billion people live in slums around the world. In some developing 
 
 ## Mumbai Slums
 
-Mumbai is one of the most populous and wealthiest cities in India. However, it is also home to some of the world’s biggest slums -- **Dharavi, Mankhurd-Govandi belt, Kurla-Ghatkopar belt, Dindoshi and The Bhandup-Mulund slums**. The number of slum-dwellers in Mumbai is estimated to be around 9 million, up from 6 million in 2001 that is, 62% of of Mumbai live in informal slums.
+For this sample we will be using data from Dharavi area in Mumbai, India. For a comparative analysis we will be using imagery for 2004 and 2014 acquired using quickbird and worldview3 sensors with a spatial resolution of 60cm. Mumbai is one of the most populous and wealthiest cities in India. However, it is also home to some of the world’s biggest slums -- **Dharavi, Mankhurd-Govandi belt, Kurla-Ghatkopar belt, Dindoshi and The Bhandup-Mulund slums**. The number of slum-dwellers in Mumbai is estimated to be around 9 million, up from 6 million in 2001 that is, 62% of of Mumbai live in informal slums.
 
 When we spoke to the local slum dwellers, we realised that the situation was worse than we expected. Most of them lack access to clean water, basic sanitation and any form of reliable healthcare.
 
@@ -20,6 +20,12 @@ We wanted to help.
 Any intitative on slum rehabitiation and improvement relies heavily on **slum mapping** and **monitoring**. When we spoke to the relevant authorities, we found out that they mapped slums manually (human annotators), which takes a substantial amount of time. We realised we could automate this and used a deep learning approach to **segment and map individual slums from satellite imagery**. In addition, we also wrote code to **perform change detection and monitor slum change over time**. Slum change detection is an important task and analysing increase/decrease of a slum can provide valuable insights.
 
 ## How did we go about it?
+
+In this workflow we will basically have three steps.
+
+Export Training Data using ArcGIS Pro
+Train a Model using learn module in ArcGIS API for Python
+Deploying the Model on ArcGIS Pro
 
 We curated a **dataset** containing 3-band (RGB) satellite imagery with 65 cm per pixel resolution
 collected from Google Earth. Each image has a pixel size of 1280x720. The satellite imagery covers most of
@@ -42,3 +48,7 @@ The final output will be in form of a feature class. We would first use a tool m
 ## Conclusion
 
 This type of workflows can be used by government bodies to continuously track and monitor the growth of slum areas, this will help decision makers take informed decisions. Slums are a wide subject and the definition may vary across geographical areas, thus the workflow has to be adapted for better results.
+
+(https://developers.arcgis.com/python/samples/images/base64-images/extracting_slums_from_satellite_imagery-1.png)
+
+A subset of Imagery overlaid with Training Data (Slum Footprint Layer).
