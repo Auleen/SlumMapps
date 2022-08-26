@@ -11,10 +11,6 @@ More than one billion people live in slums around the world. In some developing 
 
 Mumbai is one of the most populous and wealthiest cities in India. However, it is also home to some of the world’s biggest slums -- **Dharavi, Mankhurd-Govandi belt, Kurla-Ghatkopar belt, Dindoshi and The Bhandup-Mulund slums**. The number of slum-dwellers in Mumbai is estimated to be around 9 million, up from 6 million in 2001 that is, 62% of of Mumbai live in informal slums.
 
-![dharavi-govandi](/assets/images/dh-govandi.png)
-
-![kurla](/assets/images/kurla.jpg)
-
 When we spoke to the local slum dwellers, we realised that the situation was worse than we expected. Most of them lack access to clean water, basic sanitation and any form of reliable healthcare.
 
 We wanted to help. 
@@ -29,13 +25,9 @@ We curated a **dataset** containing 3-band (RGB) satellite imagery with 65 cm pe
 collected from Google Earth. Each image has a pixel size of 1280x720. The satellite imagery covers most of
 Mumbai and we include images from 2002 to 2018, to analyze slum change. We used 513 images for training, and 97 images for testing. (Unfortunately, we cannot redistribute the dataset, due to Google policy.)
 
-For **slum segmentation and mapping**, we trained a Mask R-CNN on our custom dataset. Check our [github readme](https://github.com/cbsudux/Mumbai-slum-segmentation/tree/master/slums) for our training and testing approaches, and our [paper](https://arxiv.org/abs/1811.07896) for more details.  
-
-![kurla result](/assets/images/kurla-result_2.png)
+For **slum segmentation and mapping**, we trained a CNN on our custom dataset.
 
 For **slum change detection**, we took a pair of satellite images, representing the same location at different points of time. We predicted masks for both these images and then subtracted the masks to obtain a percentage icrease/decrease. The following images (below) show a change of +35.25% between 2018 (top row) and 2005 (bottom row) of the same slum.    
-
-![change result](/assets/images/change.png)
 
 ## Training and Testing
 
