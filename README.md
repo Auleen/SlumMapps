@@ -1,4 +1,4 @@
-# BLock slum segmentation
+# Block slum segmentation
 
 More than one billion people live in slums around the world. In some developing countries, slum residents make up for more than half of the population and lack reliable sanitation services, clean water, electricity, other basic services. We wanted to help. We built a deep learning model to map and and monitor slum growth over time. Check out our [project site]() for more information and how you can be a part of this and contribute.
 
@@ -32,3 +32,13 @@ For **slum change detection**, we took a pair of satellite images, representing 
 ## Training and Testing
 
 Read [this](https://github.com/armaanbadhan/weBelong/blob/main/Machine%20Learning/slum%20data%20from%20satellite%20imaging%20defsmart.ipynb) for extraction, training and testing, and how to prepare your own satellite dataset.
+
+## Final Output
+
+The final output will be in form of a feature class. We would first use a tool majority filter to smoothen prediction by our model and then use polygon to raster tool to vectorize our results.
+
+(https://developers.arcgis.com/python/samples/images/base64-images/extracting_slums_from_satellite_imagery-14.png)
+
+## Conclusion
+
+This type of workflows can be used by government bodies to continuously track and monitor the growth of slum areas, this will help decision makers take informed decisions. Slums are a wide subject and the definition may vary across geographical areas, thus the workflow has to be adapted for better results.
