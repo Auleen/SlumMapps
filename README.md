@@ -43,12 +43,16 @@ Read [this](https://github.com/armaanbadhan/weBelong/blob/main/Machine%20Learnin
 
 The final output will be in form of a feature class. We would first use a tool majority filter to smoothen prediction by our model and then use polygon to raster tool to vectorize our results.
 
-(https://developers.arcgis.com/python/samples/images/base64-images/extracting_slums_from_satellite_imagery-14.png)
+<p align="center">
+  <img src="https://developers.arcgis.com/python/samples/images/base64-images/extracting_slums_from_satellite_imagery-14.png" >
+</p>
 
 ## Conclusion
 
 This type of workflows can be used by government bodies to continuously track and monitor the growth of slum areas, this will help decision makers take informed decisions. Slums are a wide subject and the definition may vary across geographical areas, thus the workflow has to be adapted for better results.
 
-(https://developers.arcgis.com/python/samples/images/base64-images/extracting_slums_from_satellite_imagery-1.png)
+<p align="center">
+  <img src="https://developers.arcgis.com/python/samples/images/base64-images/extracting_slums_from_satellite_imagery-1.png" >
+</p>
 
 A subset of Imagery overlaid with Training Data (Slum Footprint Layer).
