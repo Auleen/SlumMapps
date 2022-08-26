@@ -3,14 +3,8 @@ import 'E:/defsmart Finale/defsmart draft 1/frontend/smarties/src/components/nav
 function Navbar() {
     return ( <><div className='nav'>
     <div className='logo'>
-        <h1>weBelong 🗾</h1>
+        <h1>Interactive Maps GIS🗾</h1>
     </div>
-
-    <div className='leftbar'>
-        <a>Prediction</a>
-        <a>Dashboard</a>
-    </div>
-   
         </div></> );
 }
 

@@ -9,6 +9,8 @@
 .btnagain{
     display: inline-block;
     margin-bottom: 1rem;
+    margin: 1rem;
+    padding: 0.5rem;
     color: rgba(255,255,255,0.7);
     background-color: rgba(255,255,255,0.08);
     border-color: rgba(255,255,255,0.2);
@@ -16,6 +18,12 @@
     border-width: 1px;
     border-radius: 0.3rem;
     transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.btnagain:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.664);
+    color: rgb(17, 15, 15);;
 }
 .textbox{
     padding-top: 2rem;
@@ -26,6 +34,9 @@
     color:#eb5555;
 }
 
+.head h4{
+    color: rgb(24, 22, 22);
+}
 img{
     width: 720px;
     height: auto;
