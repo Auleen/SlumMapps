@@ -16,7 +16,7 @@ function Predict() {
             <button className='btnagain'><Link style={{ textDecoration: "none",color:"white"}} to="/interactivemaps">
               View Maps
             </Link></button>
-            <button className='btnagain' onclick="location.href='https://github.com/Auleen/Kafka'">View ReadMe</button>
+            <button className='btnagain' onclick="location.href='http://127.0.0.1:5500/src/components/model/something.html'"><a style={{ textDecoration: "none",color:"white"}} href="https://github.com/armaanbadhan/weBelong" target="blank">View ReadMe</a></button>
         </div>
         <div className='textbox'>
             <h3>Geographical Slum Segmentation</h3>

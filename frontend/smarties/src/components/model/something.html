@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sample</title>
+    <script type="text/javascript">
+      const baseApiURL = "https://platform.sentisight.ai/api/";
+      let token = "";
+      let predictionId;
+      let results;
+      let resultOutput;
+
+      function predict() {
+        token = "6t11kne7thr5mk996hs87fmhp";
+        const projectId = "42811";
+        const modelName = "sl-classification-model-1";
+        const input = document.getElementById("upload");
+        const resultOutput = document.getElementById("output");
+        const resultcnf = document.getElementById("confidence");
+        const file = input.files[0];
+        const fr = new FileReader();
+        fr.onload = function () {
+          results = apiPostRequest(
+            "predict/" + projectId + "/" + modelName,
+            fr.result
+          );
+          let parsedResults = JSON.parse(results);
+          resultOutput.innerText = "Detected: " + parsedResults[0].label;
+          resultcnf.innerText =
+            "Confidence Score: " + parsedResults[0].score + "%";
+
+          console.log(parsedResults);
+        };
+        fr.readAsArrayBuffer(file);
+      }
+
+      function apiPostRequest(request, body) {
+        const xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("POST", baseApiURL + request, false);
+        xmlHttp.setRequestHeader("Content-Type", "application/octet-stream");
+        xmlHttp.setRequestHeader("X-Auth-token", token);
+        xmlHttp.send(body);
+        console.log(xmlHttp.responseText);
+        return xmlHttp.responseText;
+      }
+    </script>
+    <link rel="stylesheet" href="something.css" />
+  </head>
+  <body>
+    Slum Detection Model
+    <div class="container">
+      Upload image: <input id="upload" type="file" name="" value="" />
+      <br />
+      <button class="btn" type="button" onclick="predict()">Predict</button>
+      <br /><br /><br />
+      <p id="output">Your results will go here!</p>
+      <p id="confidence"></p>
+    </div>
+  </body>
+</html>

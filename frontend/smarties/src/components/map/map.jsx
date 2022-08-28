@@ -10,16 +10,9 @@ function Map() {
     <div className='container'>
         <iframe id="inlineFrameExample"
     title="Inline Frame Example"
-    width="650"
+    width="100%"
     height="650"
     src="https://geosaurus.maps.arcgis.com/apps/mapviewer/index.html?layers=88b6a607eb8645979649055077bdd514">
-</iframe>
-
-<iframe id="inlineFrameExample"
-    title="Inline Frame Example"
-    width="650"
-    height="650"
-    src="https://www.arcgis.com/apps/mapviewer/index.html?url=https://gmis.smartcities.gov.in/server/rest/services/UrbanObservatory/UrbanStatistics/FeatureServer/10">
 </iframe>
     </div> );
 }
