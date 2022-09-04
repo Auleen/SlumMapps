@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { useLocation, useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import './predict.css'
-import Slums from 'E:/defsmart Finale/defsmart draft 1/frontend/smarties/src/assets/differenceSlums.png'
-import Airslum from 'E:/defsmart Finale/defsmart draft 1/frontend/smarties/src/assets/AirportSlum1.png'
-import Cnn from 'E:/defsmart Finale/defsmart draft 1/frontend/smarties/src/assets/maskcnn.jpeg'
-import Dharavi from 'E:/defsmart Finale/defsmart draft 1/frontend/smarties/src/assets/DharaviMap1.png'
+import Slums from '../assets/differenceSlums.png'
+import Airslum from '../assets/AirportSlum1.png'
+import Cnn from '../assets/maskcnn.jpeg'
+import Dharavi from '../assets/DharaviMap1.png'
 function Predict() {
     const navigate = useNavigate();
     return ( 

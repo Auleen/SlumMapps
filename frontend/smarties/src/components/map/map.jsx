@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { Icon } from 'leaflet'
-import icon1 from "E:/defsmart Finale/defsmart draft 1/frontend/smarties/src/components/map/iconyay.png"
+import icon1 from "./iconyay.png"
 
 
 function Map() {

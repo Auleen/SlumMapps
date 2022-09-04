@@ -1,5 +1,5 @@
 import React from 'react';
-import 'E:/defsmart Finale/defsmart draft 1/frontend/smarties/src/components/navbar/navbar.css'
+import './navbar.css'
 function Navbar() {
     return ( <><div className='nav'>
     <div className='logo'>
